@@ -13,7 +13,7 @@
 
 ## Лабораторні работи
                 
-1. [Лабораторна робота](https://andreyshyshkin.github.io/Labs/op/labs/lab1/lab-report)
-2. Лабораторна робота
-3. Лабораторна робота
++ [Лабораторна робота №1](https://andreyshyshkin.github.io/Labs/op/labs/lab1/lab-report)
++ Лабораторна робота  №2
++ Лабораторна робота  №3
                 
