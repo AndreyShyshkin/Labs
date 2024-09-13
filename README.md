@@ -9,6 +9,6 @@
 
 ## Лабораторні работи
 
-1. [Лабораторні работи по ОП](https://andreyshyshkin.github.io/AndreyShyshkin/Labs/op)
-2. [Лабораторні работи по ОПІ](https://andreyshyshkin.github.io/AndreyShyshkin/Labs/opi)
+1. [Лабораторні работи по ОП](https://andreyshyshkin.github.io/Labs/op)
+2. [Лабораторні работи по ОПІ](https://andreyshyshkin.github.io/Labs/opi)
 3. [Лабораторні работи по АК](https://andreyshyshkin.github.io/Labs/ak/)
