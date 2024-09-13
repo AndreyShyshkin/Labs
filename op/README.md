@@ -11,7 +11,9 @@
 
     Ковалюк Тетяна Володимирівна
 
-## Лабораторні работи
+## Лабораторні роботи
+
+Лабораторна робота [info](https://andreyshyshkin.github.io/Labs/op/MethodLabWorkC%2B%2Bv19-2024/main.html)
 
 - [Лабораторна робота №1](https://andreyshyshkin.github.io/Labs/op/labs/lab1/report)
 - Лабораторна робота №2
