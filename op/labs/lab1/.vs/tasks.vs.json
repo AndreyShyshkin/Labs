@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-\u0417\u0430\u0432\u0434\u0430\u043D\u043D\u044F 1",
+      "appliesTo": "\u0417\u0430\u0432\u0434\u0430\u043D\u043D\u044F 1.cpp",
+      "type": "launch"
+    }
+  ]
+}
