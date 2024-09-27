@@ -3,25 +3,15 @@
 #include <string>   // для роботи з рядками
 using namespace std;
 
-double inputValid(const string &prompt) {
-  string input;
-  double value;
-  bool validInput = false;
-
-  do {
-    cout << prompt;
-    cin >> input; // Читаємо введення як рядок
-
-    try {
-      value = stod(input); // Пробуємо перетворити рядок у число
-      validInput = true; // Якщо вдалося, вводимо число
-    } catch (invalid_argument &) {
-      cout << "Помилка: можна ввести тільки число. Спробуйте ще раз.\n";
-    }
-
-  } while (!validInput);
-
-  return value;
+bool isValidInput(double &x)
+{
+  if (cin >> x)
+  {
+    return true;
+  }
+  cin.clear();
+  cin.ignore();
+  return false;
 }
 
 int main() {
@@ -36,16 +26,30 @@ int main() {
   cout << "X=sin^3 C Cos^2 A / (e^A + 1 + SinB)" << endl;
   cout << "---------------------------------------" << endl;
 
-  // Введення значень змінних
-  double A = inputValid("Введіть значення A: ");
-  double B = inputValid("Введіть значення B: ");
-  double C = inputValid("Введіть значення C: ");
+  double A, B, C;
+
+  cout << "Введіть a: ";
+  while (!isValidInput(A))
+  {
+    cout << "Помилка ввода! Будьласка, введіть коректне число для a: ";
+  }
+
+  cout << "Введіть b: ";
+  while (!isValidInput(B))
+  {
+    cout << "Помилка ввода! Будьласка, введіть коректне число для b: ";
+  }
+
+  cout << "Введіть c: ";
+  while (!isValidInput(C))
+  {
+    cout << "Помилка ввода! Будьласка, введіть коректне число для c: ";
+  }
 
   // Обчислення виразу
   double X = pow(sin(C), 3) * pow(cos(A), 2) / (exp(A) + 1 + sin(B));
 
   // Виведення результату
-  cout << "Результат обчислення X = " << X << std::endl;
-
+  cout << "Результат обчислення X = " << X << endl;
   return 0;
 }
