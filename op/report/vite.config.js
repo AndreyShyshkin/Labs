@@ -1,6 +1,6 @@
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import 'vite/modulepreload-polyfill'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +8,9 @@ export default defineConfig({
 	build: {
 		manifest: true,
 		rollupOptions: {
-			input: '/src/main.jsx',
+			input: {
+				main: resolve(__dirname, 'index.html'),
+			},
 		},
 	},
 })
