@@ -66,12 +66,12 @@ export default function Header() {
 						/>
 					</Link>
 				</div>
-				<p className='m-auto text-lg text-center leading-2 text-gray-600'>
+				<p className='hidden lg:flex m-auto text-lg text-center leading-2 text-gray-600'>
 					Київський ніціональний універститет імені Тараса Шевченка
 					<br />
 					Факультет інформаційних технологій
 				</p>
-				<div className='hidden lg:flex lg:flex-1 lg:justify-end'>
+				<div className='flex flex-1 justify-end'>
 					<Listbox value={selected} onChange={setSelected}>
 						<div
 							className='relative mt-2'

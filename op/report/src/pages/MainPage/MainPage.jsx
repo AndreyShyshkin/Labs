@@ -10,7 +10,7 @@ export default function MainPage() {
 			<Header />
 			<div className='relative isolate px-6 pt-14 lg:px-8'>
 				<BackGroundUp />
-				<div className='max-w-5xl m-auto py-32 sm:py-48 lg:py-56 flex justify-between'>
+				<div className='max-w-5xl m-auto py-32 sm:py-48 lg:py-56 block justify-between sm:flex'>
 					<div className='text-left m-auto'>
 						<h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
 							Звіти по лабораторних роботах по ОП
