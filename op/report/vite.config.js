@@ -7,6 +7,7 @@ export default defineConfig({
 	plugins: [react()],
 	build: {
 		manifest: true,
+		historyApiFallback: true,
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
