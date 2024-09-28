@@ -1,5 +1,17 @@
 import Vysnovok from '../../components/Vysnovok/Vysnovok'
 
 export default function VysnovokLab() {
-	return <Vysnovok vysnovokText={<div></div>} />
+	return (
+		<Vysnovok
+			vysnovokText={
+				<p>
+					В ході лабораторної роботи №1 ми навчилися використовувати та
+					ініціалізувати змінні, використовувати та створювати функції,
+					підключати бібліотеки, використовувати математичні функції та
+					проводити математичні розрахунки з викорастанням підключенних
+					бібліотек
+				</p>
+			}
+		/>
+	)
 }
