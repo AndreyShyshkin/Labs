@@ -12,11 +12,7 @@ export default function UmovaLab() {
 							виразу, використовуючи математичні функції, і вивести результат на
 							екран. Довільні значення змінних A,B,C,D ввести з клавіатури.
 						</p>
-						<img
-							className='py-4'
-							src='/src/assets/lab1/var25.gif'
-							alt='task1'
-						/>
+						<img className='py-4' src='/src/assets/var25.gif' alt='task1' />
 					</div>
 					<div>
 						<p>
