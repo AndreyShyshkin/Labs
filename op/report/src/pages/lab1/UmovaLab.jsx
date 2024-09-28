@@ -14,7 +14,7 @@ export default function UmovaLab() {
 						</p>
 						<img
 							className='py-4'
-							src='/src/pages/lab1/assets/var25.gif'
+							src='/src/assets/lab1/var25.gif'
 							alt='task1'
 						/>
 					</div>

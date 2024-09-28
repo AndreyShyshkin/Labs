@@ -9,7 +9,7 @@ export default function BlockLab() {
 						<p className='text-sky-500'>Блок схема Завдання 1:</p>
 						<img
 							className='py-4'
-							src='/src/pages/lab1/assets/block1.jpg'
+							src='/src/assets/lab1/block1.jpg'
 							alt='block1'
 						/>
 					</div>
@@ -17,7 +17,7 @@ export default function BlockLab() {
 						<p className='text-sky-500'>Блок схема Завдання 2:</p>
 						<img
 							className='py-4'
-							src='/src/pages/lab1/assets/block2.jpg'
+							src='/src/assets/lab1/block2.jpg'
 							alt='block2'
 						/>
 					</div>
