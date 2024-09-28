@@ -11,6 +11,7 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
+				katalog: resolve(__dirname, 'pages/LabsKatalog/LabsKatalog.jsx'),
 			},
 		},
 	},
