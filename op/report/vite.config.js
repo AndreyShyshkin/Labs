@@ -5,14 +5,17 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react()],
+	base: '/',
 	build: {
 		manifest: true,
-		historyApiFallback: true,
+		outDir: 'dist',
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
-				katalog: resolve(__dirname, 'pages/LabsKatalog/LabsKatalog.jsx'),
 			},
 		},
+	},
+	server: {
+		historyApiFallback: true,
 	},
 })
