@@ -3,6 +3,49 @@ import Katalog from '../../components/Katalog/Katalog'
 export default function LabsKatalog() {
 	const currentPath = window.location.pathname
 
+	const katalogBlocks = [
+		{
+			href: `${currentPath}/meta-roboti`,
+			name: 'Мета роботи',
+			img: 'https://cdn-icons-png.flaticon.com/512/599/599224.png',
+		},
+		{
+			href: `${currentPath}/umova-roboti`,
+			name: 'Умова роботи',
+			img: 'https://cdn-icons-png.flaticon.com/512/1356/1356627.png',
+		},
+		{
+			href: `${currentPath}/analiz-roboti`,
+			name: 'Аналіз роботи',
+			img: 'https://cdn-icons-png.flaticon.com/512/1006/1006585.png',
+		},
+		{
+			href: `${currentPath}/block-scheme`,
+			name: 'Блок-схема',
+			img: 'https://cdn-icons-png.flaticon.com/512/2145/2145691.png',
+		},
+		{
+			href: `${currentPath}/code-programm`,
+			name: 'Код програми',
+			img: 'https://cdn-icons-png.flaticon.com/512/59/59118.png',
+		},
+		{
+			href: `${currentPath}/vikonanie-programm`,
+			name: 'Виконання програми',
+			img: 'https://cdn-icons-png.flaticon.com/512/1352/1352802.png',
+		},
+		{
+			href: `${currentPath}/perverka-dostovirnosti`,
+			name: 'Перевірка достовірності',
+			img: 'https://cdn-icons-png.flaticon.com/512/5145/5145815.png',
+		},
+		{
+			href: `${currentPath}/vysnovok`,
+			name: 'Висновок',
+			img: 'https://cdn-icons-png.flaticon.com/512/8916/8916300.png',
+		},
+	]
+
 	const NumLabs = str => {
 		const numberMatch = str.match(/\d+/)
 		return numberMatch
@@ -19,46 +62,14 @@ export default function LabsKatalog() {
 					Виберіть що ви хочете переглянути
 				</p>
 				<div className='mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2'>
-					<Katalog
-						name='Мета роботи'
-						img='https://cdn-icons-png.flaticon.com/512/599/599224.png'
-						linkUrl={`${currentPath}/meta-roboti`}
-					/>
-					<Katalog
-						name='Умова роботи'
-						img='https://cdn-icons-png.flaticon.com/512/1356/1356627.png'
-						linkUrl={`${currentPath}/umova-roboti`}
-					/>
-					<Katalog
-						name='Аналіз роботи'
-						img='https://cdn-icons-png.flaticon.com/512/1006/1006585.png'
-						linkUrl={`${currentPath}/analiz-roboti`}
-					/>
-					<Katalog
-						name='Блок-схема'
-						img='https://cdn-icons-png.flaticon.com/512/2145/2145691.png'
-						linkUrl={`${currentPath}/block-scheme`}
-					/>
-					<Katalog
-						name='Код програми'
-						img='https://cdn-icons-png.flaticon.com/512/59/59118.png'
-						linkUrl={`${currentPath}/code-programm`}
-					/>
-					<Katalog
-						name='Виконання програми'
-						img='https://cdn-icons-png.flaticon.com/512/1352/1352802.png'
-						linkUrl={`${currentPath}/vikonanie-programm`}
-					/>
-					<Katalog
-						name='Перевірка достовірності'
-						img='https://cdn-icons-png.flaticon.com/512/5145/5145815.png'
-						linkUrl={`${currentPath}/perverka-dostovirnosti`}
-					/>
-					<Katalog
-						name='Висновок'
-						img='https://cdn-icons-png.flaticon.com/512/8916/8916300.png'
-						linkUrl={`${currentPath}/vysnovok`}
-					/>
+					{katalogBlocks.map((item, idx) => (
+						<Katalog
+							key={idx}
+							name={item.name}
+							img={item.img}
+							linkUrl={item.href}
+						/>
+					))}
 				</div>
 			</div>
 		</div>
