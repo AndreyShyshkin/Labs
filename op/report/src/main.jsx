@@ -2,6 +2,7 @@ import { lazy, StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
+import Layout from './Layout.jsx'
 import LabsKatalog from './pages/LabsKatalog/LabsKatalog.jsx'
 import MainPage from './pages/MainPage/MainPage.jsx'
 
@@ -74,9 +75,15 @@ const labsRoutes = [1, 2].map(labNumber => {
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <MainPage />,
+		element: <Layout />,
+		children: [
+			{
+				index: true,
+				element: <MainPage />,
+			},
+			...labsRoutes.flat(),
+		],
 	},
-	...labsRoutes.flat(),
 ])
 
 createRoot(document.getElementById('root')).render(

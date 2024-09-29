@@ -1,4 +1,3 @@
-import Header from '../../components/Header/Header'
 import Katalog from '../../components/Katalog/Katalog'
 
 export default function LabsKatalog() {
@@ -11,8 +10,7 @@ export default function LabsKatalog() {
 			: 'Не знайдено номер лабораторной роботи'
 	}
 	return (
-		<div className='bg-gray-50 py-24 sm:py-32'>
-			<Header />
+		<div className='pt-24 sm:pt-32'>
 			<div className='mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8'>
 				<h2 className='text-center text-base/7 font-semibold text-indigo-600'>
 					Каталог. Лабораторнa робота {NumLabs(currentPath)}
