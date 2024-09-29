@@ -1,6 +1,7 @@
 import { lazy, StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Loading from './components/Loading/Loading.jsx'
 import './index.css'
 import Layout from './Layout.jsx'
 import LabsKatalog from './pages/LabsKatalog/LabsKatalog.jsx'
@@ -88,7 +89,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
-		<Suspense fallback={<div>Loading...</div>}>
+		<Suspense fallback={<Loading />}>
 			<RouterProvider router={router} />
 		</Suspense>
 	</StrictMode>
