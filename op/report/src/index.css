@@ -5,3 +5,7 @@
 .h-vh {
 	height: 100vh;
 }
+
+ol {
+	list-style-position: inside;
+}
