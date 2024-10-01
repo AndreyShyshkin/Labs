@@ -1,22 +1,21 @@
-import { useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function GoToLabButton() {
 	const location = useLocation()
-	const navigate = useNavigate()
 
-	const handleGoToLab = () => {
+	function handleGoToLab() {
 		const pathParts = location.pathname.split('/')
 
 		if (pathParts.length > 1) {
 			const basePath = pathParts[1]
 
-			navigate(`/${basePath}`)
+			return `/${basePath}`
 		}
 	}
 
 	return (
-		<button className='text-gray-400 py-2' onClick={handleGoToLab}>
+		<Link to={handleGoToLab()} className='text-gray-400 py-2'>
 			&lt; Повернутися до каталогу
-		</button>
+		</Link>
 	)
 }
