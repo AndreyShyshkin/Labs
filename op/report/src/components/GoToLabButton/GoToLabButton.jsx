@@ -15,7 +15,7 @@ export default function GoToLabButton() {
 	}
 
 	return (
-		<button className='text-gray-400 py-4' onClick={handleGoToLab}>
+		<button className='text-gray-400 py-2' onClick={handleGoToLab}>
 			&lt; Повернутися до каталогу
 		</button>
 	)
