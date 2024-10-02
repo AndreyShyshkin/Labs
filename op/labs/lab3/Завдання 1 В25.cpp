@@ -1,6 +1,20 @@
+#include <cfloat>
 #include <cmath>
 #include <iomanip>
 #include <iostream>
+
+using namespace std;
+
+bool isValidInput(double &x)
+{
+  if (cin >> x)
+  {
+    return true;
+  }
+  cin.clear();
+  cin.ignore();
+  return false;
+}
 
 double factorial(int n)
 {
@@ -9,53 +23,66 @@ double factorial(int n)
   return n * factorial(n - 1);
 }
 
-double power(double base, int exp)
+int Task1(double precision)
 {
-  if (exp == 0)
-    return 1;
-  if (exp < 0)
-    return 1 / power(base, -exp);
-  return base * power(base, exp - 1);
+  double overallSum = 0, sum = 0, member;
+
+  system("cls");
+
+  cout << "==========================================================" << endl;
+  cout << "     x     k               member               sum     " << endl;
+  cout << "==========================================================" << endl;
+
+  for (int x = 1; x <= 5; x++)
+  {
+
+    sum = 0;
+    int k = 0;
+
+    do
+    {
+      member =
+          (pow(-1, k + 1) * pow(x, 2 * k - 1)) / ((2 * k - 1) * factorial(k));
+
+      if (member != 0 && fabs(member) < FLT_MIN || member > FLT_MAX)
+      {
+        cout << "Переповнення плаваючої точки учасника — розрив циклу з k"
+             << endl;
+        break;
+      }
+
+      cout << setw(6) << x << setw(6) << k << setw(21) << member << setw(18)
+           << sum << endl;
+
+      sum += member;
+      k++;
+
+    } while (fabs(member) > precision);
+    cout << "=========================================================="
+         << endl;
+  }
+  return overallSum += sum;
 }
 
 int main()
 {
-  double epsilon, total_sum = 0;
-  std::cout << "Enter the precision (e.g., 1e-6): ";
-  std::cin >> epsilon;
+  cout << "---------------------------------------" << endl;
+  cout << "Лабораторна робота №3" << endl;
+  cout << "Студент Шишкін Андрій Антонович, ІПЗ-11, Варіант 25" << endl;
+  cout << "Sigma x=1 to 5, Sigma k=0 to inf  ( pow(-1, k+1) * pow(x, 2 * k - "
+          "1) ) / ( (2k - 1) * factorial(k) ) \n"
+       << endl;
+  cout << "---------------------------------------" << endl;
 
-  std::cout << std::setw(10) << "x" << std::setw(10) << "k" << std::setw(20)
-            << "Term" << std::setw(20) << "Sum" << std::endl;
+  double precision;
 
-  for (int x = 1; x <= 5; ++x)
+  cout << "Введіть бажане значення точності:" << endl;
+  cin >> precision;
+  while (!isValidInput(precision))
   {
-    double x_sum = 0;
-    int k = 0;
-    double term;
-
-    do
-    {
-      term = power(-1, k + 1) * power(x, 2 * k - 1) / factorial(2 * k);
-
-      if (std::abs(term) < 1e-38 || std::abs(term) > 1e38)
-      {
-        break;
-      }
-
-      x_sum += term;
-
-      std::cout << std::setw(10) << x << std::setw(10) << k << std::setw(20)
-                << std::scientific << std::setprecision(10) << term
-                << std::setw(20) << x_sum << std::endl;
-
-      k++;
-    } while (std::abs(term) > epsilon);
-
-    total_sum += x_sum;
+    cout << "Помилка ввода! Будьласка, введіть коректне число для a: ";
   }
+  double result = Task1(precision);
 
-  std::cout << "\nTotal sum: " << std::scientific << std::setprecision(10)
-            << total_sum << std::endl;
-
-  return 0;
+  cout << "Загальна сума: " << result << endl;
 }
