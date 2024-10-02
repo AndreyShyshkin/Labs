@@ -23,11 +23,20 @@ double factorial(int n)
   return n * factorial(n - 1);
 }
 
-int Task1(double precision)
+double pow(int x, int n)
+{
+  if (n == 0)
+    return 1;
+  if (n < 0)
+    return 1 / pow(x, -n);
+  return x * pow(x, n - 1);
+}
+
+double Sigma(double precision)
 {
   double overallSum = 0, sum = 0, member;
 
-  system("cls");
+  system("clear");
 
   cout << "==========================================================" << endl;
   cout << "     x     k               member               sum     " << endl;
@@ -44,10 +53,9 @@ int Task1(double precision)
       member =
           (pow(-1, k + 1) * pow(x, 2 * k - 1)) / ((2 * k - 1) * factorial(k));
 
-      if (member != 0 && fabs(member) < FLT_MIN || member > FLT_MAX)
+      if (member != 0 && fabs(member) < DBL_MIN || member > DBL_MAX)
       {
-        cout << "Переповнення плаваючої точки учасника — розрив циклу з k"
-             << endl;
+        cout << "Переповнення — розрив циклу з k" << endl;
         break;
       }
 
@@ -82,7 +90,7 @@ int main()
   {
     cout << "Помилка ввода! Будьласка, введіть коректне число для a: ";
   }
-  double result = Task1(precision);
+  double result = Sigma(precision);
 
   cout << "Загальна сума: " << result << endl;
 }
