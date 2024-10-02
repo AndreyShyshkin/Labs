@@ -36,8 +36,6 @@ double Sigma(double precision)
 {
   double overallSum = 0, sum = 0, member;
 
-  system("clear");
-
   cout << "==========================================================" << endl;
   cout << "     x     k               member               sum     " << endl;
   cout << "==========================================================" << endl;
@@ -85,7 +83,6 @@ int main()
   double precision;
 
   cout << "Введіть бажане значення точності:" << endl;
-  cin >> precision;
   while (!isValidInput(precision))
   {
     cout << "Помилка ввода! Будьласка, введіть коректне число для a: ";
