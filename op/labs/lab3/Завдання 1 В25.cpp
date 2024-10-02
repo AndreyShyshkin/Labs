@@ -5,7 +5,7 @@
 
 using namespace std;
 
-bool isValidInput(double &x)
+bool isValidInput(float &x)
 {
   if (cin >> x)
   {
@@ -16,14 +16,14 @@ bool isValidInput(double &x)
   return false;
 }
 
-double factorial(int n)
+float factorial(int n)
 {
   if (n == 0 || n == 1)
     return 1;
   return n * factorial(n - 1);
 }
 
-double pow(int x, int n)
+float pow(int x, int n)
 {
   if (n == 0)
     return 1;
@@ -32,9 +32,9 @@ double pow(int x, int n)
   return x * pow(x, n - 1);
 }
 
-double Sigma(double precision)
+float Sigma(float precision)
 {
-  double overallSum = 0, sum = 0, member;
+  float overallSum = 0, sum = 0, member;
 
   cout << "==========================================================" << endl;
   cout << "     x     k               member               sum     " << endl;
@@ -51,7 +51,7 @@ double Sigma(double precision)
       member =
           (pow(-1, k + 1) * pow(x, 2 * k - 1)) / ((2 * k - 1) * factorial(k));
 
-      if (member != 0 && fabs(member) < DBL_MIN || member > DBL_MAX)
+      if (member != 0 && fabs(member) < FLT_MIN || member > FLT_MAX)
       {
         cout << "Переповнення — розрив циклу з k" << endl;
         break;
@@ -80,14 +80,14 @@ int main()
        << endl;
   cout << "---------------------------------------" << endl;
 
-  double precision;
+  float precision;
 
   cout << "Введіть бажане значення точності:" << endl;
   while (!isValidInput(precision))
   {
     cout << "Помилка ввода! Будьласка, введіть коректне число для a: ";
   }
-  double result = Sigma(precision);
+  float result = Sigma(precision);
 
   cout << "Загальна сума: " << result << endl;
 }
