@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /Users/andreyshyshkin/Documents/unik/Labs/op/labs/lab2 Select CMakeLists.txt
