@@ -1,15 +1,15 @@
-import { Moon, Sun } from "lucide-react";
-import { useState } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { Moon, Sun } from 'lucide-react'
+import { useState } from 'react'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import {
-  oneDark,
-  oneLight,
-} from "react-syntax-highlighter/dist/esm/styles/prism";
-import Code from "../../components/Code/Code";
+	oneDark,
+	oneLight,
+} from 'react-syntax-highlighter/dist/esm/styles/prism'
+import Code from '../../components/Code/Code'
 
 export default function CodeLab() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const taskCpp1 = `
+	const [isDarkTheme, setIsDarkTheme] = useState(false)
+	const taskCpp1 = `
 #include <cmath> // бібліотека математичних функцій
 #include <iostream> // бібліотека потоків вводу-виводу
 #include <string>   // для роботи з рядками
@@ -21,8 +21,7 @@ bool isValidInput(double &x)
   {
     return true;
   }
-  cin.clear();
-  cin.ignore();
+  cin >> ws;
   return false;
 }
 
@@ -65,9 +64,9 @@ int main() {
   cout << "Результат обчислення X = " << X << endl;
   return 0;
 }
-  `;
+  `
 
-  const taskCpp2 = `
+	const taskCpp2 = `
 #include <cmath> // бібліотека математичних функцій
 #include <iomanip> // бібліотека для форматування виводу
 #include <iostream> // бібліотека потоків вводу-виводу
@@ -98,8 +97,7 @@ bool isValidInput(double &x)
   {
     return true;
   }
-  cin.clear();
-  cin.ignore();
+  cin >> ws;
   return false;
 }
 
@@ -138,55 +136,55 @@ int main() // основна функція - точка входу до про�
   return 0; // завершення програми
 }
 
-  `;
+  `
 
-  const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme);
-  };
+	const toggleTheme = () => {
+		setIsDarkTheme(!isDarkTheme)
+	}
 
-  return (
-    <Code
-      codeText={
-        <div>
-          <div className="theme-toggle flex py-4">
-            <p className="text-gray-600 my-auto">Вибрати тему:</p>
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
-            >
-              {isDarkTheme ? <Sun size={24} /> : <Moon size={24} />}
-            </button>
-          </div>
-          <div>
-            <p className="text-sky-500">Код Завдання 1:</p>
-            <SyntaxHighlighter
-              language="cpp"
-              style={isDarkTheme ? oneDark : oneLight}
-              customStyle={{
-                padding: "20px",
-                borderRadius: "8px",
-                fontSize: "14px",
-              }}
-            >
-              {taskCpp1}
-            </SyntaxHighlighter>
-          </div>
-          <div>
-            <p className="text-sky-500">Код Завдання 2:</p>
-            <SyntaxHighlighter
-              language="cpp"
-              style={isDarkTheme ? oneDark : oneLight}
-              customStyle={{
-                padding: "20px",
-                borderRadius: "8px",
-                fontSize: "14px",
-              }}
-            >
-              {taskCpp2}
-            </SyntaxHighlighter>
-          </div>
-        </div>
-      }
-    />
-  );
+	return (
+		<Code
+			codeText={
+				<div>
+					<div className='theme-toggle flex py-4'>
+						<p className='text-gray-600 my-auto'>Вибрати тему:</p>
+						<button
+							onClick={toggleTheme}
+							className='p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700'
+						>
+							{isDarkTheme ? <Sun size={24} /> : <Moon size={24} />}
+						</button>
+					</div>
+					<div>
+						<p className='text-sky-500'>Код Завдання 1:</p>
+						<SyntaxHighlighter
+							language='cpp'
+							style={isDarkTheme ? oneDark : oneLight}
+							customStyle={{
+								padding: '20px',
+								borderRadius: '8px',
+								fontSize: '14px',
+							}}
+						>
+							{taskCpp1}
+						</SyntaxHighlighter>
+					</div>
+					<div>
+						<p className='text-sky-500'>Код Завдання 2:</p>
+						<SyntaxHighlighter
+							language='cpp'
+							style={isDarkTheme ? oneDark : oneLight}
+							customStyle={{
+								padding: '20px',
+								borderRadius: '8px',
+								fontSize: '14px',
+							}}
+						>
+							{taskCpp2}
+						</SyntaxHighlighter>
+					</div>
+				</div>
+			}
+		/>
+	)
 }

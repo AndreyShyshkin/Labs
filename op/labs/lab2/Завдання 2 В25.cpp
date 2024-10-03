@@ -8,8 +8,7 @@ bool isValidInput(double &x)
     {
         return true;
     }
-    cin.clear();
-    cin.ignore();
+    cin >> ws;
     return false;
 }
 
