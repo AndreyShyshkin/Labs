@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.17">
+  <diagram name="Страница — 1" id="5PDd-mHP-Hy-ZowETi-h">
+    <mxGraphModel dx="1363" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CZsBmXI7kkxCmdzXljBZ-1" target="CZsBmXI7kkxCmdzXljBZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-1" value="&lt;div&gt;Керівник проекту&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="90" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZsBmXI7kkxCmdzXljBZ-2" target="CZsBmXI7kkxCmdzXljBZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZsBmXI7kkxCmdzXljBZ-2" target="CZsBmXI7kkxCmdzXljBZ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZsBmXI7kkxCmdzXljBZ-2" target="CZsBmXI7kkxCmdzXljBZ-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZsBmXI7kkxCmdzXljBZ-2" target="CZsBmXI7kkxCmdzXljBZ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-2" value="Менеджер проєкту" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="220" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CZsBmXI7kkxCmdzXljBZ-4" target="CZsBmXI7kkxCmdzXljBZ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-4" value="Програміст" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="310" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CZsBmXI7kkxCmdzXljBZ-6" target="CZsBmXI7kkxCmdzXljBZ-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="335" />
+              <mxPoint x="540" y="278" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CZsBmXI7kkxCmdzXljBZ-6" target="CZsBmXI7kkxCmdzXljBZ-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="335" />
+              <mxPoint x="540" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-6" value="Team Lead" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="305" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-8" value="FrontEnd програміст" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="245" width="110" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-10" value="BackEnd програміст" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="360" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-12" value="Дизайнер" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="410" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-14" value="Тестувальник" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="510" width="120" height="55.5" as="geometry" />
+        </mxCell>
+        <mxCell id="CZsBmXI7kkxCmdzXljBZ-16" value="Аналітик" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="620" width="120" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
