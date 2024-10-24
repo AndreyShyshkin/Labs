@@ -1,13 +1,20 @@
-
 #include <iostream>
 using namespace std;
 
-// Function to compute the continued fraction
+bool isValidInput(int &x)
+{
+  if (cin >> x)
+  {
+    return true;
+  }
+  cin >> ws;
+  return false;
+}
+
 double computeContinuedFraction(int n)
 {
   double result = 0.0;
 
-  // Start from the innermost fraction and work outward
   for (int i = 2 * n + 1; i >= 1; i -= 2)
   {
     result = i + 1.0 / result;
@@ -28,11 +35,13 @@ int main()
 
   int n;
 
-  // Ask the user for the value of n
   cout << "Enter the value of n: ";
   cin >> n;
+  while (!isValidInput(n))
+  {
+    cout << "Помилка ввода! Будьласка, введіть коректне число для n: ";
+  }
 
-  // Compute and display the result of the continued fraction
   double result = computeContinuedFraction(n);
   cout << "The result of the continued fraction is: " << result << endl;
 

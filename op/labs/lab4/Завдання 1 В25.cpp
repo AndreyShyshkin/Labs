@@ -1,91 +1,90 @@
-
 #include <cmath>
-#include <iomanip>
 #include <iostream>
-
 using namespace std;
-bool isValidInput(float &x)
+
+void NameOfAuthor()
 {
-  if (cin >> x)
-  {
-    return true;
-  }
-  cin >> ws;
-  return false;
+
+    cout << "---------------------------------------" << endl;
+    cout << "Лабораторна робота №4" << endl;
+    cout << "Студент Шишкін Андрій Антонович, ІПЗ-11, Варіант 25" << endl;
+    cout << "Обчислити значення функції у, розвинувши функцію cos(x) у ряд Тейлора. Визначити похибку обчислення"
+         << endl;
+    cout << "{cos(x/2)/cos(x^2), -1<=x <0 \ny ={ \n   {cos(x/2)^2 * cos(2*x), x>0." << endl;
+    cout << "---------------------------------------" << endl;
 }
-float pow(int x, int n)
+double TailorCos(double x, double precision)
 {
-  if (n == 0)
-    return 1;
-  if (n < 0)
-    return 1 / pow(x, -n);
-  return x * pow(x, n - 1);
-}
-// Функція для розкладу косинуса у ряд Тейлора
-double cos_taylor(double x, int terms)
-{
-  double result = 1;
-  double term = 1;
-  for (int n = 1; n < terms; n++)
-  {
-    term *= -x * x / (2 * n * (2 * n - 1));
-    result += term;
-  }
-  return result;
+    double sum = 1;
+    double term = 1;
+    double n = 1;
+
+    while (fabs(term) > precision)
+    {
+        term *= -x * x / (n * (n + 1));
+        sum += term;
+        n += 2;
+    }
+
+    return sum;
 }
 
-// Функція для обчислення y(x) згідно з умовами
-double calculate_y(double x, int terms)
-{
-  if (x >= -1 && x <= 0)
-  {
-    return cos_taylor(x / 2, terms) / cos_taylor(x * x, terms);
-  }
-  else
-  {
-    return pow(cos_taylor(x / 2, terms), 2) * cos_taylor(2 * x, terms);
-  }
-}
-
-// Основна програма
 int main()
 {
-  cout << "---------------------------------------" << endl;
-  cout << "Лабораторна робота №4" << endl;
-  cout << "Студент Шишкін Андрій Антонович, ІПЗ-11, Варіант 25" << endl;
-  cout << "Обчислити значення функції у, розвинувши функцію cos(x) у ряд "
-       << endl;
-  cout << "Тейлора. Визначити похибку обчислення" << endl;
-  cout << "Y= {cos(x/2)/cos(x^2),   -1<=x<=0," << endl;
-  cout << "   {cos^2(x/2)*cos(2*x), x>0" << endl;
-  cout << "---------------------------------------" << endl;
+    NameOfAuthor();
+    double precision;
+    double x;
+    double step;
+    cout << "Введіть точність " << endl;
+    cin >> precision;
+    cout << " Введіть значення для х (бажано вводити значенння між -2 та 2, бо тільки на цьому проміжку вона існує "
+         << endl;
+    cin >> x;
+    cout << "Введіть крок" << endl;
+    cin >> step;
+    cout << "========================================================================================================"
+         << endl;
+    cout << "X                                Y            True                                         mistake      "
+         << endl;
+    if (x < -2 || x > 2)
+    {
+        cout << "помилка значення" << endl;
+    }
+    else
+    {
+        double answer = 0;
+        do
+        {
+            if (-1 <= x < 0)
+            {
+                //{cos(x/2)/cos(x^2)
+                answer = TailorCos(x / 2, precision) / TailorCos(x * x, precision);
+            }
+            else if (x > 0)
+            {
+                //{cos(x/2)^2 * cos(2*x)
+                answer = TailorCos(x / 2, precision) * TailorCos(x / 2, precision) * TailorCos(2 * x, precision);
+            }
 
-  // Введення значення x
-  double x;
-  int terms;
-  cout << "Введіть значення x: ";
-  cin >> x;
-  cout << "Введіть кількість членів ряду Тейлора: ";
-  cin >> terms;
+            double TrueValue = 0;
 
-  // Обчислення значення y(x)
-  double y_approx = calculate_y(x, terms);
+            if (-1 <= x < 0)
+            {
+                TrueValue = cos(x / 2) / cos(pow(x, 2));
+            }
+            else if (x > 0)
+            {
+                TrueValue = pow(cos(x / 2), 2) * cos(2 * x);
+            }
 
-  // Порівняння з реальним значенням через стандартну бібліотеку cos()
-  double y_real;
-  if (x >= -1 && x <= 0)
-  {
-    y_real = cos(x / 2) / cos(x * x);
-  }
-  else
-  {
-    y_real = pow(cos(x / 2), 2) * cos(2 * x);
-  }
+            double mistake = TrueValue - answer;
 
-  // Виведення результатів
-  cout << setprecision(10) << "Приблизне значення y(x): " << y_approx << endl;
-  cout << "Точне значення y(x): " << y_real << endl;
-  cout << "Похибка обчислення: " << fabs(y_real - y_approx) << endl;
-
-  return 0;
+            cout << x << "                                " << answer << "             " << TrueValue
+                 << "                                          " << mistake << "      " << endl;
+            x += step;
+        } while (x <= 2);
+    }
+    cout << "=========================================================================================================="
+            "=="
+         << endl;
 }
