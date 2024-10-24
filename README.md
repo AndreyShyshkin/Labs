@@ -10,5 +10,5 @@
 ## Лабораторні работи
 
 1. [Лабораторні работи по ОП Звіт](https://labs-op-shyshkin.netlify.app/)
-    1.1. [Лабораторні работи по ОП Файли](https://github.com/AndreyShyshkin/Labs/tree/main/op/labs)
+    - [Лабораторні работи по ОП Файли](https://github.com/AndreyShyshkin/Labs/tree/main/op/labs)
 2. [Лабораторні работи по ОПІ](https://andreyshyshkin.github.io/Labs/opi)

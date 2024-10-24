@@ -14,5 +14,5 @@
 ## Лабораторні работи
 
 - [Лабораторна робота №1](https://github.com/AndreyShyshkin/Labs/tree/main/opi/labs/lab1)
-- Лабораторна робота №2
-- Лабораторна робота №3
+- [Лабораторна робота №2](https://github.com/AndreyShyshkin/Labs/tree/main/opi/labs/lab2)
+- [Лабораторна робота №3](https://github.com/AndreyShyshkin/Labs/tree/main/opi/labs/lab3)
