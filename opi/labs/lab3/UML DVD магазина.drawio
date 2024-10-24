@@ -1,0 +1,221 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0" version="24.8.0">
+  <diagram name="Страница — 1" id="6Sacu4-4zVBI-UAHhV3t">
+    <mxGraphModel dx="1599" dy="921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-1" target="Jpk8FfOk-Q90_v6L05Bl-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-1" target="Jpk8FfOk-Q90_v6L05Bl-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-1" value="Користувач" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="330" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-2" target="Jpk8FfOk-Q90_v6L05Bl-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-2" target="Jpk8FfOk-Q90_v6L05Bl-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-59" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-2" target="Jpk8FfOk-Q90_v6L05Bl-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-60" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-2" target="Jpk8FfOk-Q90_v6L05Bl-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-2" value="&lt;div&gt;Адміністратор&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="800" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.998;entryY=0.347;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-4" target="Jpk8FfOk-Q90_v6L05Bl-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1062.1052631578948" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1290" y="835" />
+              <mxPoint x="1290" y="210" />
+              <mxPoint x="1046" y="210" />
+              <mxPoint x="1046" y="224" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-71" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-61" vertex="1" connectable="0">
+          <mxGeometry x="-0.9125" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-4" value="&lt;div&gt;Задання та зміна статусу доставки&lt;/div&gt;&lt;div&gt;у DVD магазину&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="800" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-45" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-6" target="Jpk8FfOk-Q90_v6L05Bl-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-6" value="Перегляд каталогу&lt;br&gt;DVD магазину" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-8" value="Запит до БД" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="910" y="200" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-41" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-66" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-41" vertex="1" connectable="0">
+          <mxGeometry x="-0.1735" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-46" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-10" target="Jpk8FfOk-Q90_v6L05Bl-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-65" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-46" vertex="1" connectable="0">
+          <mxGeometry x="0.1804" y="-2" relative="1" as="geometry">
+            <mxPoint x="-13" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-10" value="Перегляд товару&lt;br&gt;DVD магазу" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="350" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-14" value="Переглянути відгуки&lt;br&gt;товара DVD магазину" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-19" target="Jpk8FfOk-Q90_v6L05Bl-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-68" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-23" vertex="1" connectable="0">
+          <mxGeometry x="-0.1533" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-19" value="Написати відгук&lt;br&gt;тоару DVD магазину" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="910" y="440" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-20" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;{якщо користувач авторизован}&lt;br&gt;&lt;/p&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-19" target="Jpk8FfOk-Q90_v6L05Bl-14" edge="1">
+          <mxGeometry x="-0.3515" y="1" relative="1" as="geometry">
+            <mxPoint x="750" y="430" as="sourcePoint" />
+            <mxPoint x="670" y="430" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-28" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;{якщо користувач натиснув &lt;br&gt;на замовити товар та він авторизован}&lt;br&gt;&lt;/p&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-29" target="Jpk8FfOk-Q90_v6L05Bl-10" edge="1">
+          <mxGeometry x="0.0233" y="1" relative="1" as="geometry">
+            <mxPoint x="551" y="510" as="sourcePoint" />
+            <mxPoint x="470" y="470" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-29" target="Jpk8FfOk-Q90_v6L05Bl-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-69" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-33" vertex="1" connectable="0">
+          <mxGeometry x="0.6093" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-29" value="Замовити товар&lt;br&gt;у DVD магазину" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="590" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-30" value="Добавити товар до корзини &lt;br&gt;DVD магазину" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="600" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-31" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;{якщо користувач натиснув &lt;br&gt;на додати товар до корзини&lt;br&gt; та він авторизован}&lt;br&gt;&lt;/p&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.343;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-30" target="Jpk8FfOk-Q90_v6L05Bl-10" edge="1">
+          <mxGeometry x="-0.5915" y="4" relative="1" as="geometry">
+            <mxPoint x="601" y="570" as="sourcePoint" />
+            <mxPoint x="540" y="410" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-32" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;{якщо користувач натиснув &lt;br&gt;замовити товар}&lt;br&gt;&lt;/p&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-29" target="Jpk8FfOk-Q90_v6L05Bl-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="708" as="sourcePoint" />
+            <mxPoint x="528" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-35" target="Jpk8FfOk-Q90_v6L05Bl-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1370" y="1065" />
+              <mxPoint x="1370" y="160" />
+              <mxPoint x="980" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-73" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-63" vertex="1" connectable="0">
+          <mxGeometry x="-0.9365" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-35" value="Управління каталогом&lt;br&gt;DVD магазина" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1030" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.791;entryY=0.088;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-36" target="Jpk8FfOk-Q90_v6L05Bl-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1330" y="955" />
+              <mxPoint x="1330" y="180" />
+              <mxPoint x="1020" y="180" />
+              <mxPoint x="1020" y="206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-72" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-62" vertex="1" connectable="0">
+          <mxGeometry x="-0.9256" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-36" value="Упрвління товаром&lt;br&gt;у DVD магазину" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="920" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-40" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.025;entryY=0.639;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-14" target="Jpk8FfOk-Q90_v6L05Bl-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-67" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-40" vertex="1" connectable="0">
+          <mxGeometry x="-0.2153" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-42" target="Jpk8FfOk-Q90_v6L05Bl-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="705" />
+              <mxPoint x="1240" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-70" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Jpk8FfOk-Q90_v6L05Bl-58" vertex="1" connectable="0">
+          <mxGeometry x="-0.8778" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-42" value="Перегляд замовлення&lt;br&gt;у DVD магазину" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="670" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-47" value="Перегляд корзини&lt;br&gt;вибрних товрів&lt;br&gt;DVD магазину" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="460" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-51" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;{якщо користувач авторизован}&lt;br&gt;&lt;/p&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0.4;exitY=-0.004;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-42" target="Jpk8FfOk-Q90_v6L05Bl-1" edge="1">
+          <mxGeometry x="-0.7104" y="8" relative="1" as="geometry">
+            <mxPoint x="442" y="638" as="sourcePoint" />
+            <mxPoint x="290" y="510" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-54" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;{якщо користувач натиснув &lt;br&gt;на категорію товарів в каталогу}&lt;br&gt;&lt;/p&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0.571;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-10" target="Jpk8FfOk-Q90_v6L05Bl-6" edge="1">
+          <mxGeometry x="-0.3854" y="-1" relative="1" as="geometry">
+            <mxPoint x="941" y="550" as="sourcePoint" />
+            <mxPoint x="510" y="430" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jpk8FfOk-Q90_v6L05Bl-55" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;{якщо користувач авторизован}&lt;br&gt;&lt;/p&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Jpk8FfOk-Q90_v6L05Bl-47" target="Jpk8FfOk-Q90_v6L05Bl-1" edge="1">
+          <mxGeometry x="-0.2124" y="9" relative="1" as="geometry">
+            <mxPoint x="426" y="710" as="sourcePoint" />
+            <mxPoint x="295" y="310" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,3 +1,0 @@
-/Users/andreyshyshkin/Documents/unik/mkr1/cmake-build-debug/CMakeFiles/mkr1.dir
-/Users/andreyshyshkin/Documents/unik/mkr1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/andreyshyshkin/Documents/unik/mkr1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
