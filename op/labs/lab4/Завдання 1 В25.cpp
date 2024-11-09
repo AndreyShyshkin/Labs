@@ -1,5 +1,6 @@
 #include <cmath>
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void NameOfAuthor()
@@ -12,7 +13,7 @@ void NameOfAuthor()
           "Тейлора. Визначити похибку обчислення"
        << endl;
   cout
-      << "{cos(x/2)/cos(x^2), -1<=x <0 \ny ={ \n   {cos(x/2)^2 * cos(2*x), x>0."
+      << "   {cos(x/2)/cos(x^2), -1<=x<=0 \ny ={ \n   {cos(x/2)^2 * cos(2*x), x>0."
       << endl;
   cout << "---------------------------------------" << endl;
 }
@@ -62,7 +63,7 @@ int main()
     double answer = 0;
     do
     {
-      if (-1 <= x < 0)
+      if (-1 <= x <= 0)
       {
         //{cos(x/2)/cos(x^2)
         answer = TailorCos(x / 2, precision) / TailorCos(x * x, precision);
@@ -76,7 +77,7 @@ int main()
 
       double TrueValue = 0;
 
-      if (-1 <= x < 0)
+      if (-1 <= x <= 0)
       {
         TrueValue = cos(x / 2) / cos(pow(x, 2));
       }
@@ -87,10 +88,10 @@ int main()
 
       double mistake = TrueValue - answer;
 
-      cout << x << "                                " << answer
-           << "             " << TrueValue
-           << "                                          " << mistake
-           << "      " << endl;
+      cout << setw(5) << x << setw(25) << answer
+           << setw(15) << TrueValue
+           << setw(40) << mistake
+           << endl;
       x += step;
     } while (x <= 2);
   }
