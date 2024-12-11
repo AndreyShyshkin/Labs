@@ -1,26 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int gcd_recursive(int a, int b, int &callCount)
-{
-  callCount++;
-  if (b == 0)
-    return a;
-  return gcd_recursive(b, a % b, callCount);
-}
-
-int gcd_iterative(int a, int b, int &iterations)
-{
-  while (b != 0)
-  {
-    int temp = a % b;
-    a = b;
-    b = temp;
-    iterations++;
-  }
-  return a;
-}
-
 void welcome()
 {
   cout << "---------------------------------------" << endl;
@@ -36,7 +16,29 @@ void welcome()
   cout << "---------------------------------------" << endl;
 }
 
-int main()
+int gcd_recursive(int a, int b, int &callCount)
+{
+  callCount++;
+  if (b == 0)
+  {
+    return a;
+  }
+  return gcd_recursive(b, a % b, callCount);
+}
+
+int gcd_iterative(int a, int b, int &iterations)
+{
+  while (b != 0)
+  {
+    int temp = a % b;
+    a = b;
+    b = temp;
+    iterations++;
+  }
+  return a;
+}
+
+void input()
 {
   int m, n;
   cout << "Введіть два натуральних числа: ";
@@ -51,6 +53,11 @@ int main()
   int gcdIter = gcd_iterative(m, n, iterations);
   cout << "НСД (ітеративно): " << gcdIter
        << ", Кількість ітерацій: " << iterations << endl;
+}
 
+int main()
+{
+  welcome();
+  input();
   return 0;
 }

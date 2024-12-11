@@ -36,7 +36,6 @@ int main()
   int n;
 
   cout << "Enter the value of n: ";
-  cin >> n;
   while (!isValidInput(n))
   {
     cout << "Помилка ввода! Будьласка, введіть коректне число для n: ";

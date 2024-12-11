@@ -2,19 +2,6 @@
 #include <iostream>
 using namespace std;
 
-void printDigitsReversed(int n)
-{
-  if (n < 10)
-  {
-    cout << n << " ";
-    return;
-  }
-
-  cout << n % 10 << " ";
-
-  printDigitsReversed(n / 10);
-}
-
 void welcome()
 {
   cout << "---------------------------------------" << endl;
@@ -30,13 +17,28 @@ void welcome()
   cout << "---------------------------------------" << endl;
 }
 
+void printDigitsReversed(int n)
+{
+  if (n < 10)
+  {
+    cout << n << " ";
+    return;
+  }
+
+  cout << n % 10 << " ";
+
+  printDigitsReversed(n / 10);
+}
+
 int main()
 {
+  welcome();
   int n;
   cout << "Введіть натуральне число: ";
   cin >> n;
 
   printDigitsReversed(n);
+  cout << endl; 
 
   return 0;
 }
